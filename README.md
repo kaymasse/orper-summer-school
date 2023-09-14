@@ -7,10 +7,14 @@ Move Thymio based on environment
 
 Status of code and project
 - The code and project have just been started. It is very much still work in progress.
-- The current code allows the robot to illuminate its top LEDS based on the lateral tilting of the robot.
+- The current code allows the robot to illuminate its top LEDS based on the tilting of the robot. For instance, if you tilt the robot to the right, the right LED gets illuminated.
+
+Future plans
+- The code currently is missing testing. I plan to add several unit tests to this purpose.
+- To facilitate dependency management, I plan to use Anaconda.
 
 A - Code
-The current code is found in the file "Move Thymio based on side tilt.ipynb"
+The code is found in the file "Move Thymio based on side tilt.ipynb"
 
 B - Physical setup to run the code
 - A computer running MacOS X 10.13 or later, or Windows 7 or later.
@@ -43,7 +47,7 @@ D - Steps to run the code
 
 5. You should see the logo with your Thymio robot appear (do not click on it)
 
-6. Open your command line interface and run command: jupyter-notebooks
+6. Open your command line interface and run command: jupyter-notebook
 This should open Jupyter Notebooks in your browser.
 
 7. In Jupyter Notebooks, navigate to the code file "Move Thymio based on side tilt.ipynb" and open it.
@@ -53,3 +57,10 @@ This cell just needs to be run the first time to connect your notebook to your T
 
 9. Select the second cell and run it.
 This is the actual code.
+
+E - Dependencies
+pip 23.2.1
+Python 3.11.5
+Jupyter-notebook 3.9.6
+tdmclient 0.1.20
+ThymioSuite 2.4.0
